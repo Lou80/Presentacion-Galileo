@@ -62,11 +62,12 @@ p {
 
 .fotito {
     @include imgEstilo(140px, 140px, 0px, solid 1px rgb(45,45,45) );
-    margin: auto;
+    margin-right: 10px;
 }
 
 .fotos {
-    margin-top: 30px;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 .derecha {

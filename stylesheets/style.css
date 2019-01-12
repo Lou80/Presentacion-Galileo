@@ -77,33 +77,34 @@ p {
   width: 140px;
   border-radius: 0px;
   border: solid 1px #2d2d2d;
-  margin: auto;
+  margin-right: 10px;
 }
 
 /* line 68, ../sass/style.scss */
 .fotos {
-  margin-top: 30px;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .derecha {
   padding-top: 3%;
   padding-right: 3%;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 p::first-letter, .nombre {
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .nombre {
   color: #ebca5f;
 }
 
 @media screen and (max-width: 480px) {
-  /* line 86, ../sass/style.scss */
+  /* line 87, ../sass/style.scss */
   .tarjeta {
     display: block;
     margin-left: auto;
@@ -112,24 +113,24 @@ p::first-letter, .nombre {
     height: 700px;
   }
 
-  /* line 93, ../sass/style.scss */
+  /* line 94, ../sass/style.scss */
   .texto {
     font-size: 1.2rem;
   }
 
-  /* line 96, ../sass/style.scss */
+  /* line 97, ../sass/style.scss */
   .perfil {
     padding-top: 5%;
     padding-left: 25%;
     padding-bottom: 0%;
   }
 
-  /* line 101, ../sass/style.scss */
+  /* line 102, ../sass/style.scss */
   .derecha {
     padding: 0%;
   }
 
-  /* line 104, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   .fotito {
     height: 90px;
     width: 90px;
@@ -137,7 +138,7 @@ p::first-letter, .nombre {
     border: solid 1px #2d2d2d;
   }
 
-  /* line 107, ../sass/style.scss */
+  /* line 108, ../sass/style.scss */
   .principal {
     height: 200px;
     width: 200px;
@@ -145,18 +146,18 @@ p::first-letter, .nombre {
     border: solid #ebca5f 1px;
   }
 
-  /* line 110, ../sass/style.scss */
+  /* line 111, ../sass/style.scss */
   .fotos {
     display: block;
     margin-top: 0%;
   }
 
-  /* line 114, ../sass/style.scss */
+  /* line 115, ../sass/style.scss */
   .arriba, .abajo {
     justify-content: space-between;
   }
 
-  /* line 117, ../sass/style.scss */
+  /* line 118, ../sass/style.scss */
   .medio {
     margin: auto;
   }
