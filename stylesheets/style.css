@@ -1,0 +1,163 @@
+/* line 1, ../sass/style.scss */
+.flex {
+  display: flex;
+}
+
+/* line 4, ../sass/style.scss */
+.tarjeta {
+  position: relative;
+  background-image: url(https://image.freepik.com/foto-gratis/pelo-animal_1194-5749.jpg);
+  margin: 100px 150px;
+  font-family: 'Amatic SC', cursive;
+  border: solid #ebca5f 3px;
+}
+
+/* line 12, ../sass/style.scss */
+.tarjeta:before {
+  background: none repeat scroll 0 0 #ebca5f;
+  /* color de esquina */
+  border-color: #FFFFFF #FFFFFF black;
+  /* color de borde */
+  border-style: solid;
+  border-width: 0 80px 80px 0;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+}
+
+/* line 32, ../sass/style.scss */
+.principal {
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  border: solid #ebca5f 2px;
+}
+
+/* line 35, ../sass/style.scss */
+.principal:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  transition: all .5s ease-in-out;
+}
+
+/* line 40, ../sass/style.scss */
+.fotito:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  border: solid #ebca5f 2px;
+  -webkit-border: solid #ebca5f 2px;
+}
+
+/* line 48, ../sass/style.scss */
+.perfil {
+  padding: 10% 2% 10% 4%;
+}
+
+/* line 52, ../sass/style.scss */
+.texto {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: whitesmoke;
+}
+
+/* line 58, ../sass/style.scss */
+p {
+  width: 50%;
+  padding: 3%;
+}
+
+/* line 63, ../sass/style.scss */
+.fotito {
+  height: 140px;
+  width: 140px;
+  border-radius: 0px;
+  border: solid 1px #2d2d2d;
+  margin: auto;
+}
+
+/* line 68, ../sass/style.scss */
+.fotos {
+  margin-top: 30px;
+}
+
+/* line 72, ../sass/style.scss */
+.derecha {
+  padding-top: 3%;
+  padding-right: 3%;
+}
+
+/* line 76, ../sass/style.scss */
+p::first-letter, .nombre {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* line 81, ../sass/style.scss */
+.nombre {
+  color: #ebca5f;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 86, ../sass/style.scss */
+  .tarjeta {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    height: 700px;
+  }
+
+  /* line 93, ../sass/style.scss */
+  .texto {
+    font-size: 1.2rem;
+  }
+
+  /* line 96, ../sass/style.scss */
+  .perfil {
+    padding-top: 5%;
+    padding-left: 25%;
+    padding-bottom: 0%;
+  }
+
+  /* line 101, ../sass/style.scss */
+  .derecha {
+    padding: 0%;
+  }
+
+  /* line 104, ../sass/style.scss */
+  .fotito {
+    height: 90px;
+    width: 90px;
+    border-radius: 0px;
+    border: solid 1px #2d2d2d;
+  }
+
+  /* line 107, ../sass/style.scss */
+  .principal {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: solid #ebca5f 1px;
+  }
+
+  /* line 110, ../sass/style.scss */
+  .fotos {
+    display: block;
+    margin-top: 0%;
+  }
+
+  /* line 114, ../sass/style.scss */
+  .arriba, .abajo {
+    justify-content: space-between;
+  }
+
+  /* line 117, ../sass/style.scss */
+  .medio {
+    margin: auto;
+  }
+}
