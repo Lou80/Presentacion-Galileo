@@ -4,9 +4,10 @@
 .tarjeta {
     position: relative;
     background-image: url(https://image.freepik.com/foto-gratis/pelo-animal_1194-5749.jpg);
-    margin: 100px 150px;
+    margin: 5% 10%;
     font-family: 'Amatic SC', cursive;
     border: solid rgb(235, 202, 95) 3px;
+    width: 80%;
     
 }
 .tarjeta:before {
@@ -90,6 +91,7 @@ p::first-letter, .nombre {
         margin-right: auto;
         margin-top: 0%;
         height: 700px;
+        width: 100%;
     }
     .texto {
         font-size: 1.2rem;
@@ -116,6 +118,6 @@ p::first-letter, .nombre {
         justify-content: space-between;
     }
     .medio {
-        margin: auto;
+        justify-content: center;
     }
 }
