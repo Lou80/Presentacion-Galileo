@@ -150,7 +150,7 @@ p::first-letter, .nombre {
     border: solid 1px #2d2d2d;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
   /* line 112, ../sass/style.scss */
   .texto {
     font-size: 1.2em;
