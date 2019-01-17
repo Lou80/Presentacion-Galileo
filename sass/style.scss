@@ -1,4 +1,4 @@
-@import "partials/base";
+$amarillo-bordes: rgb(235,202,95);
 
 .flex {
     display: flex;
@@ -46,7 +46,7 @@ border: $colorborde;
     padding-right: 3%;
 }
 .texto {
-    font-size: 1.8rem;
+    font-size: 1.5em;
     text-align: justify;
     color: whitesmoke;
     text-shadow: 2px 2px 2px $amarillo-bordes;
@@ -57,11 +57,11 @@ p {
 }
 p::first-letter, .nombre {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.6em;
 }
-.nombre {
+.nombre:hover {   
     color: $amarillo-bordes;
-    font-size: 1.8rem;
+    text-shadow: 0px 0px 9px rgb(224, 213, 110);
 }
 .fotos {
     margin-left: 5%;
@@ -78,7 +78,7 @@ p::first-letter, .nombre {
     -webkit-border: solid $amarillo-bordes 1px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1500px) {
     .tarjeta {
         display: block;
         margin-left: auto;
@@ -88,16 +88,33 @@ p::first-letter, .nombre {
         height: 100%;
     }
     .texto {
-        font-size: 1.2rem;
+        font-size: 1.3em;
+    }
+    p::first-letter, .nombre {
+        font-size: 1.4em;
     }
     .perfil {
-        padding-top: 5%;
-        padding-left: 25%;
         padding-bottom: 0%;
+        justify-content: center;
    }
    .derecha {
-       padding: 0%;
-   }
+    padding: 0%;
+    }
+    .fotos {
+        justify-content: center;
+    }
+    .fotito{
+    @include imgEstilo(105px, 105px, 0px, solid 1px rgb(45,45,45) );
+    }
+ }
+
+@media only screen and (max-width: 480px) {
+    .texto {
+        font-size: 1.2em;
+    }
+    p::first-letter, .nombre {
+        font-size: 1.3em;
+    }
    .fotito{
        @include imgEstilo(90px,90px , 0px,solid 1px rgb(45,45,45) );
     }

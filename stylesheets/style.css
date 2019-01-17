@@ -57,7 +57,7 @@
 
 /* line 48, ../sass/style.scss */
 .texto {
-  font-size: 1.8rem;
+  font-size: 1.5em;
   text-align: justify;
   color: whitesmoke;
   text-shadow: 2px 2px 2px #ebca5f;
@@ -72,13 +72,13 @@ p {
 /* line 58, ../sass/style.scss */
 p::first-letter, .nombre {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.6em;
 }
 
 /* line 62, ../sass/style.scss */
-.nombre {
+.nombre:hover {
   color: #ebca5f;
-  font-size: 1.8rem;
+  text-shadow: 0px 0px 9px #e0d56e;
 }
 
 /* line 66, ../sass/style.scss */
@@ -105,7 +105,7 @@ p::first-letter, .nombre {
   -webkit-border: solid #ebca5f 1px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1500px) {
   /* line 82, ../sass/style.scss */
   .tarjeta {
     display: block;
@@ -118,22 +118,50 @@ p::first-letter, .nombre {
 
   /* line 90, ../sass/style.scss */
   .texto {
-    font-size: 1.2rem;
+    font-size: 1.3em;
   }
 
   /* line 93, ../sass/style.scss */
-  .perfil {
-    padding-top: 5%;
-    padding-left: 25%;
-    padding-bottom: 0%;
+  p::first-letter, .nombre {
+    font-size: 1.4em;
   }
 
-  /* line 98, ../sass/style.scss */
+  /* line 96, ../sass/style.scss */
+  .perfil {
+    padding-bottom: 0%;
+    justify-content: center;
+  }
+
+  /* line 100, ../sass/style.scss */
   .derecha {
     padding: 0%;
   }
 
-  /* line 101, ../sass/style.scss */
+  /* line 103, ../sass/style.scss */
+  .fotos {
+    justify-content: center;
+  }
+
+  /* line 106, ../sass/style.scss */
+  .fotito {
+    height: 105px;
+    width: 105px;
+    border-radius: 0px;
+    border: solid 1px #2d2d2d;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 112, ../sass/style.scss */
+  .texto {
+    font-size: 1.2em;
+  }
+
+  /* line 115, ../sass/style.scss */
+  p::first-letter, .nombre {
+    font-size: 1.3em;
+  }
+
+  /* line 118, ../sass/style.scss */
   .fotito {
     height: 90px;
     width: 90px;
@@ -141,7 +169,7 @@ p::first-letter, .nombre {
     border: solid 1px #2d2d2d;
   }
 
-  /* line 104, ../sass/style.scss */
+  /* line 121, ../sass/style.scss */
   .principal {
     height: 200px;
     width: 200px;
@@ -149,18 +177,18 @@ p::first-letter, .nombre {
     border: solid #ebca5f 1px;
   }
 
-  /* line 107, ../sass/style.scss */
+  /* line 124, ../sass/style.scss */
   .fotos {
     display: block;
     margin-top: 0%;
   }
 
-  /* line 111, ../sass/style.scss */
+  /* line 128, ../sass/style.scss */
   .arriba, .abajo {
     justify-content: space-between;
   }
 
-  /* line 114, ../sass/style.scss */
+  /* line 131, ../sass/style.scss */
   .medio {
     justify-content: center;
   }
